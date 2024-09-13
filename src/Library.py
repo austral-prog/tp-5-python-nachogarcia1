@@ -26,7 +26,7 @@ class Library:
     def add_book(self, isbn:str, title:str, author:str)->None:
         for book in self.__books:
             if book.get_isbn() == isbn:
-                pass
+                return
         libro : Book = Book(isbn, title, author)
         self.__books.append(libro)
 
