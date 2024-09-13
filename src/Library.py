@@ -72,7 +72,7 @@ class Library:
         return f"Book {isbn} is not available"
 
     # Utils
-    def add_user(self, dni: int, name: str) -> None:
+    def add_user(self, dni: str, name: str) -> None:
         for user in self.__users:
             if user.get_dni() == dni:
                 return
