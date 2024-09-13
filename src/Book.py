@@ -39,3 +39,5 @@ class Book:
     def __eq__(self, other: object) -> bool:
         if isinstance(other, self.__class__):
             return self.__isbn == other.__isbn
+        else:
+            return False
