@@ -76,5 +76,5 @@ class Library:
         for user in self.__users:
             if user.get_dni() == dni:
                 pass
-        usuario : User = User(dni, name)
+        usuario: User = User(dni, name)
         self.__users.append(usuario)
